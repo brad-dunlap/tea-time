@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-30T17:09:41-04:00">2023-05-30T17:09:41-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-30T17:30:14-04:00">2023-05-30T17:30:14-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  99.24%
+  100.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.33
+         1.32
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>21</b> files in total.
+    <b>22</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>131</b> relevant lines,
-    <span class="green"><b>130</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed. </span>
+    <b>138</b> relevant lines,
+    <span class="green"><b>138</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
-  99.24%
+  100.0%
 </span>
 )
   </div>
@@ -129,6 +129,17 @@
             <td class="strong t-file__name"><a href="#f6abb788ff232e5b5e9d57ef5a376523247a2135" class="src_link" title="app/models/tea.rb">app/models/tea.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#cf515a1b6c05b16b1ef78fb51d934e82cb075e7f" class="src_link" title="app/serializers/subscriptions_serializer.rb">app/serializers/subscriptions_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -292,11 +303,11 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ed87235e1c7330885ed967f645fc67349b2a1763" class="src_link" title="spec/requests/subscriptions_request_spec.rb">spec/requests/subscriptions_request_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">92.86 %</td>
-            <td class="cell--number">23</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">1</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0</td>
             <td class="cell--number">1.29</td>
             
           </tr>
@@ -406,7 +417,7 @@
 
             
 
-            <code class="ruby">		render json: subscriptions, status: :ok</code>
+            <code class="ruby">		render json: SubscriptionsSerializer.new(subscriptions)</code>
           </li>
         </div>
       
@@ -886,6 +897,114 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="cf515a1b6c05b16b1ef78fb51d934e82cb075e7f">
+  <div class="header">
+    <h3>app/serializers/subscriptions_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class SubscriptionsSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">	include JSONAPI::Serializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">	set_type :subscriptions</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">	attributes :title, :price, :status, :frequency, :customer_id, :tea_id, :tea</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -3858,7 +3977,7 @@
     <h3>spec/requests/subscriptions_request_spec.rb</h3>
     <h4>
       <span class="green">
-  92.86%
+  100.0%
 </span>
 
       lines covered
@@ -3867,9 +3986,9 @@
     
 
     <div class="t-line-summary">
-      <b>14</b> relevant lines.
-      <span class="green"><b>13</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>17</b> relevant lines.
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -3919,7 +4038,7 @@
 
             
 
-            <code class="ruby">	describe &#39;GET /api/v0/customers/:customer_id/subscriptions&#39; do</code>
+            <code class="ruby">  describe &#39;GET /api/v0/customers/:customer_id/subscriptions&#39; do</code>
           </li>
         </div>
       
@@ -3930,7 +4049,7 @@
 
             
 
-            <code class="ruby">		let(:customer) { create(:customer) }</code>
+            <code class="ruby">    let(:customer) { create(:customer) }</code>
           </li>
         </div>
       
@@ -3941,7 +4060,7 @@
 
             
 
-            <code class="ruby">		let(:tea1) { create(:tea) }</code>
+            <code class="ruby">    let(:tea1) { create(:tea) }</code>
           </li>
         </div>
       
@@ -3952,7 +4071,7 @@
 
             
 
-            <code class="ruby">		let(:tea2) { create(:tea) }</code>
+            <code class="ruby">    let(:tea2) { create(:tea) }</code>
           </li>
         </div>
       
@@ -3974,7 +4093,7 @@
 
             
 
-            <code class="ruby">		let!(:subscription1) { create(:subscription, customer: customer, tea: tea1)}</code>
+            <code class="ruby">    let!(:subscription1) { create(:subscription, customer: customer, tea: tea1)}</code>
           </li>
         </div>
       
@@ -3985,7 +4104,7 @@
 
             
 
-            <code class="ruby">		let!(:subscription2) { create(:subscription, customer: customer, tea: tea2)}</code>
+            <code class="ruby">    let!(:subscription2) { create(:subscription, customer: customer, tea: tea2)}</code>
           </li>
         </div>
       
@@ -4007,18 +4126,18 @@
 
             
 
-            <code class="ruby">		it &#39;returns all subscriptions info for a given customer&#39; do</code>
+            <code class="ruby">    it &#39;returns all subscriptions info for a given customer&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      get &quot;/api/v0/customers/#{customer.id}/subscriptions&quot;</code>
           </li>
         </div>
       
@@ -4040,18 +4159,18 @@
 
             
 
-            <code class="ruby">			get &quot;/api/v0/customers/#{customer.id}/subscriptions&quot;</code>
+            <code class="ruby">      expect(response).to have_http_status(200)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      subscriptions = JSON.parse(response.body, symbolize_names: true)</code>
           </li>
         </div>
       
@@ -4062,18 +4181,18 @@
 
             
 
-            <code class="ruby">			expect(response.status).to eq 200</code>
+            <code class="ruby">      data = subscriptions[:data]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="18">
+            
             
 
             
 
-            <code class="ruby">			subscriptions = JSON.parse(response.body)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4084,18 +4203,18 @@
 
             
 
-            <code class="ruby">			</code>
+            <code class="ruby">      expect(data).to be_an(Array)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="20">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      expect(subscriptions.size).to eq(2)</code>
+            
+
+            <code class="ruby">      expect(data.size).to eq(2)</code>
           </li>
         </div>
       
@@ -4106,23 +4225,56 @@
 
             
 
-            <code class="ruby">		end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      subscription_attributes = data.first[:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(subscription_attributes.keys).to contain_exactly(:title, :price, :status, :frequency, :customer_id, :tea_id, :tea)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
             
 
-            <code class="ruby">	end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
