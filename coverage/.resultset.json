@@ -202,10 +202,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -214,10 +214,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -226,10 +226,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           null
@@ -238,7 +238,10 @@
       "/Users/braddunlap/Desktop/turing_work/4mod/tea_time/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -291,6 +294,8 @@
           1,
           null,
           1,
+          1,
+          null,
           null
         ]
       },
@@ -322,8 +327,53 @@
           1,
           null
         ]
+      },
+      "/Users/braddunlap/Desktop/turing_work/4mod/tea_time/spec/requests/subscriptions_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/braddunlap/Desktop/turing_work/4mod/tea_time/app/controllers/api/v0/customers/subscriptions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/braddunlap/Desktop/turing_work/4mod/tea_time/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1685477881
+    "timestamp": 1685480981
   }
 }
