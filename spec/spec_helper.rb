@@ -14,7 +14,13 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_filter "spec/rails_helper.rb"
+  add_filter "spec/spec_helper.rb"
+  add_filter "app/controllers/graphql_controller.rb"
+  add_filter "spec/factories/users.rb"
+  add_filter "app/graphql/mia_be_schema.rb"
+end
 
 require 'factory_bot_rails'
 RSpec.configure do |config|
