@@ -1,9 +1,14 @@
 class Api::V0::Customers::SubscriptionsController < ApplicationController
 	def index
-		customer = Customer.find(params[:customer_id])
-		subscriptions = customer.subscriptions
+		customer = Customer.find_by(id: params[:customer_id])
 
-		render json: SubscriptionsSerializer.new(subscriptions)
+		if customer.nil?
+			render json: { error: "Customer not found" }, status: :not_found
+		else
+			subscriptions = customer.subscriptions
+			
+			render json: SubscriptionsSerializer.new(subscriptions)
+		end
 	end
 
 	def create
@@ -12,6 +17,19 @@ class Api::V0::Customers::SubscriptionsController < ApplicationController
 			render json: SubscriptionsSerializer.new(sub), status: 201
 		else 
 			render json: { error: sub.errors.full_messages.to_sentence }, status: 400
+		end
+	end
+
+	def update
+		sub = Subscription.find_by(id: params[:id])
+		if sub.nil?
+			render json: { error: "Subscription not found" }, status: :not_found
+		else
+			if sub.update(subscription_params)
+				render json: SubscriptionsSerializer.new(sub), status: 201
+			else 
+				render json: { error: sub.errors.full_messages.to_sentence }, status: 400
+			end
 		end
 	end
 
