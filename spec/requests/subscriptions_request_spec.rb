@@ -23,4 +23,33 @@ describe 'Subscriptions API', type: :request do
       expect(subscription_attributes.keys).to contain_exactly(:title, :price, :status, :frequency, :customer_id, :tea_id, :tea)
     end
   end
+
+	describe 'POST /api/v0/customers/:customer_id/subscriptions' do
+    let(:customer) { create(:customer) }
+    let(:tea1) { create(:tea) }
+
+		it 'creates a new subscription for a given customer' do
+			subscription_params = {
+				title: 'Magical Tea Package',
+				price: 10.00,
+				status: 'active',
+				frequency: 'weekly',
+				customer_id: customer.id,
+				tea_id: tea1.id
+			}
+
+			post "/api/v0/customers/#{customer.id}/subscriptions", params: subscription_params
+
+			expect(response).to have_http_status(201)
+			subscription = JSON.parse(response.body, symbolize_names: true)
+			data = subscription[:data]
+
+			expect(data[:attributes][:title]).to eq(subscription_params[:title])
+			expect(data[:attributes][:price]).to eq(subscription_params[:price])
+			expect(data[:attributes][:status]).to eq(subscription_params[:status])
+			expect(data[:attributes][:frequency]).to eq(subscription_params[:frequency])
+			expect(data[:attributes][:customer_id]).to eq(subscription_params[:customer_id])
+			expect(data[:attributes][:tea_id]).to eq(subscription_params[:tea_id])
+		end
+	end
 end
