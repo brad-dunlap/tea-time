@@ -103,7 +103,6 @@ describe 'Subscriptions API', type: :request do
 				expect(response).to have_http_status(201)
 				subscription = JSON.parse(response.body, symbolize_names: true)
 				data = subscription[:data]
-
 				expect(data[:attributes][:status]).to eq(subscription_params[:status])
 				
 			end
