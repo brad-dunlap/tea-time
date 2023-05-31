@@ -3,6 +3,4 @@ class TeasSerializer
 	set_type :tea
 	
 	attributes :name, :description, :temperature, :brew_time
-
-	exclude :created_at, :updated_at
 	end
