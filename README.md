@@ -148,6 +148,7 @@ This is an example of how to list things you need to use the software and how to
 You must have the following software installed on your system:
 
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
+* [Rails](https://guides.rubyonrails.org/getting_started.html)
 * [Bundler](https://bundler.io/)
 * [PostgreSQL](https://www.postgresql.org/download/)
 
@@ -175,11 +176,40 @@ You must have the following software installed on your system:
 
 <a href="#top">Back to top</a>
 <br />
+
+
+### Database Tables
 <br />
 
+![Database](/images/database.png)
 
+<br />
 
+### Requests and Responses
+<br />
 
+Get Requests
+![get_request](/images/get_request.png)
+Get Response
+![get_response](/images/get_response.png)
+<br />
+<br />
+
+Post Requests
+
+![post_request](/images/post_request.png)
+Post Response
+![post_response](/images/post_response.png)
+<br />
+<br />
+
+Patch Requests
+
+![patch_request](/images/patch_request.png)
+Patch Response
+![patch_response](/images/patch_response.png)
+<br />
+<br />
 
 
 <!-- CONTRIBUTING -->
@@ -204,11 +234,12 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 
-<div align="center">
+<div align="left">
   <img src="https://avatars.githubusercontent.com/u/117024855?v=4" alt="Profile" width="80" height="80">
-  <p align="center">
+  <p align="left">
     Bradley Dunlap<br>
-    <a href="https://github.com/brad-dunlap">Github: brad-dunlap</a>
+    <a href="https://github.com/brad-dunlap">Github: brad-dunlap</a> <br>
+    <a href="https://www.linkedin.com/in/dunlap-brad/">LinkedIn: dunlap-brad</a>
   </p>
 </div>
 
@@ -217,9 +248,6 @@ Don't forget to give the project a star! Thanks again!
 <br />
 <br />
 
-<a href="#top">Back to top</a>
-<br />
-<br />
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 

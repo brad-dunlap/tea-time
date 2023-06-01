@@ -201,7 +201,13 @@
       "/Users/braddunlap/Desktop/turing_work/4mod/tea_time/spec/factories/customers.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          1,
+          7,
+          null,
+          null,
           7,
           7,
           7,
@@ -523,6 +529,6 @@
         ]
       }
     },
-    "timestamp": 1685545015
+    "timestamp": 1685634508
   }
 }
