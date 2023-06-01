@@ -176,41 +176,8 @@ You must have the following software installed on your system:
 <a href="#top">Back to top</a>
 <br />
 <br />
-### Database Tables
-<br />
-Users:
 
-![Users_table](/images/users_table.png)
 
-See the [open issues](https://github.com/wise-app-team/wise-app-be/issues) for a full list of proposed features (and known issues).
-
-<a href="#top">Back to top</a>
-<br />
-<br />
-### Requests and Responses
-<br />
-
-Weather Requests
-![weather_request](/images/weather_request.png)
-![weather_response](/images/weather_response.png)
-<br />
-<br />
-Registration Requests
-
-![registration](/images/registration_request_and_response.png)
-<br />
-<br />
-Login Requests
-
-![login](/images/login_request_and_response.png)
-<br />
-<br />
-RoadTrip Requests
-
-![roadtrip_request](/images/roadtrip_request.png)
-![roadtrip_response](/images/roadtrip_response.png)
-<br />
-<br />
 
 
 
