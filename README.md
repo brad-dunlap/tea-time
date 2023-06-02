@@ -188,25 +188,25 @@ You must have the following software installed on your system:
 ### Requests and Responses
 <br />
 
-Get Requests
-![get_request](/images/get_request.png)
-Get Response
+Get Requests<br>
+![get_request](/images/get_request.png)<br>
+Get Response<br>
 ![get_response](/images/get_response.png)
 <br />
 <br />
 
-Post Requests
+Post Requests<br>
 
-![post_request](/images/post_request.png)
-Post Response
+![post_request](/images/post_request.png)<br>
+Post Response<br>
 ![post_response](/images/post_response.png)
 <br />
 <br />
 
-Patch Requests
+Patch Requests<br>
 
-![patch_request](/images/patch_request.png)
-Patch Response
+![patch_request](/images/patch_request.png)<br>
+Patch Response<br>
 ![patch_response](/images/patch_response.png)
 <br />
 <br />
